@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "LeoWrapper",
+  "version": "1.0",
+
+  "description": "Wrapper for dict.leo.org",
+
+  "icons": {
+    "48": "icons/leo-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["leoWrapper.js"]
+    }
+  ]
+}
